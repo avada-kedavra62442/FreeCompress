@@ -1,11 +1,9 @@
 # FreeCompress
 
-Free, browser-based utilities built around privacy and practical file processing.
+Local-first browser compression utility for images, PDFs and browser-playable audio/video.
 
-## Development
+- Images: canvas re-encoding with real before/after size reporting.
+- PDFs: re-saves PDF structure; does not promise embedded-image recompression.
+- Audio/video: MediaRecorder re-encoding to WebM in real time when supported.
 
-Install dependencies with `npm install`, then run `npm run dev`.
-
-## Deployment
-
-Designed for deployment on Vercel as a Vite single-page application.
+Install with npm install; develop with npm run dev; build with npm run build. Large media files may need substantial memory. No file-upload backend is used.
